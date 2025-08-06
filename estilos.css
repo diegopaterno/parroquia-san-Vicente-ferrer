@@ -45,13 +45,23 @@ body {
 .top-bar-right {
   text-align: right;
 }
+.top-bar-right i {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: #060101;
+  transition: color 0.2s ease;
+}
+
+.top-bar-right i:hover {
+  color: #120e02; /* color dorado al pasar el mouse */
+}
 
 header {
   background-image: url('img/Imagen_central.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(103, 97, 97);
   padding: 60px 15px;
   text-align: center;
   position: relative;
@@ -87,7 +97,9 @@ header::before {
 
 header h1,
 header p {
+  font-family: 'Cinzel', serif;
   position: relative;
+  color: #c0bebe;
   z-index: 1;
 }
 header h1 {
