@@ -8,6 +8,12 @@
   <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
+  <!--<p id="fecha-hora"></p>-->
+ 
+<button onclick="scrollToTop()" id="btn-up" title="Volver arriba">⬆</button>
+
+
+
   <div class="top-bar">
   <div class="container">
     <div class="top-bar-left">
@@ -19,6 +25,12 @@
       <span class="me-2">Seguinos en:</span>
       <a href="https://www.facebook.com/sanviferrer" target="_blank" rel="noopener noreferrer" class="me-2"><img src="img/facebook.svg" alt=""></a>
       <a href="https://www.instagram.com/parroquiasanvicente/" target="_blank" rel="noopener noreferrer" class="me-2"><img src="img/icons8-instagram-20.svg" alt=""></a>
+       <button id="btn-eventos" onclick="mostrarEventos()">Ver próximos eventos</button>
+<ul id="eventos" style="display: none;">
+  <li>🌟 Misa  - 27 de octubre</li>
+  <li>🙏 Confirmaciones - 15 de noviembre</li>
+  <li>🎄 Pesebre Viviente - 24 de diciembre</li>
+</ul>
     </div>
   </div>
 </div>
@@ -35,13 +47,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">        
-        <li class="nav-item"><a class="nav-link" href="#misas">Historia</a></li>
-        <li class="nav-item"><a class="nav-link" href="#misas">Ministerios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sacramentos">Sacramentos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#misas">Horarios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#misas">Turnos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+      <ul class="navbar-nav ms-auto">      
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="ministerios.html">Ministerios</a></li>
+        <li class="nav-item"><a class="nav-link" href="sacramentos.html">Sacramentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="horarios.html">Horarios</a></li>
+        <li class="nav-item"><a class="nav-link" href="turnos.html">Turnos</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
     </div>
@@ -144,5 +156,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
